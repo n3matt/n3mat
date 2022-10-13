@@ -263,11 +263,11 @@ a:hover {
 
 @keyframes move-1 {
     0%{
-        top: -20px;
+        top: 0px;
     }
 
     100% {
-        top: 100px;
+        top: 50px;
     }
 
 }
