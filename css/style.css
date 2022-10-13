@@ -210,7 +210,7 @@ a:hover {
     .landing .text {
         padding: 50px 10px;
         margin-top: 0;
-        animation: move-1 infinite 3s linear alternate;
+        animation: move-1 infinite 1s linear alternate;
     }
 }
 
@@ -267,7 +267,7 @@ a:hover {
     }
 
     100% {
-        top: 70px;
+        top: 80px;
     }
 
 }
