@@ -445,3 +445,35 @@ a:hover {
 .articles .articles-content .image img {
     width: 100%;
 }
+
+
+
+.bg-gradient {
+    position: relative;
+}
+
+.bg-gradient::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    background-image: linear-gradient(135deg, #009688 25%, transparent 25%), linear-gradient(225deg, #009688 25%, transparent 25%);
+    background-size: 30px 30px;
+}
+
+
+
+
+.gallery {
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ececec;
+    z-index: 1;
+}
+
+
