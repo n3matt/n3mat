@@ -485,7 +485,10 @@ h2.head:hover::before {
 .team::after,
 .services::after,
 .skills::after,
-.works::after {
+.works::after,
+.events::after,
+.price::after,
+.video::after {
     content: "";
     position: absolute;
     right: 0;
@@ -1164,8 +1167,21 @@ h2.head:hover::before {
     height: 100%;
 }
 
+.skills .progress > div  div[prog="70%"] {
+    animation: width-70 3s forwards linear;
+}
+
+.skills .progress > div  div[prog="80%"] {
+    animation: width-80 3s forwards linear;
+}
+
+.skills .progress > div  div[prog="85%"] {
+    animation: width-85 3s forwards linear;
+}
+
+
 .skills .progress > div div::after {
-    content: attr(data-progress);
+    content: attr(prog);
     position: absolute;
     right: 0;
     top: -35px;
@@ -1176,6 +1192,41 @@ h2.head:hover::before {
     font-weight: 800;
     border-radius: 4px;
 }
+
+
+@keyframes width-80 {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        width: 80%;
+        opacity: 1;
+    }
+}
+
+@keyframes width-85 {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        width: 85%;
+        opacity: 1;
+    }
+}
+
+@keyframes width-70 {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        width: 70%;
+        opacity: 1;
+    }
+}
+
 
 
 
@@ -1224,12 +1275,38 @@ h2.head:hover::before {
     gap: 25px;
     background-color: #f6f6f6;
     padding: 25px;
-    border: 2.5px solid #fff;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+}
+
+.works .work-content .text .col::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 0%;
+    background-color: #ededed;
+    transition: .5s linear;
+    z-index: -1;
+}
+
+.works .work-content .text .col:hover::after {
+    width: 100%;
+    height: 100%;
 }
 
 .works .work-content .text .col img {
     display: block;
     height: 70px;
+}
+
+.works .work-content .text .col .info h3{
+    font-weight: 900;
+    margin-bottom: 10px;
 }
 
 
@@ -1250,12 +1327,71 @@ h2.head:hover::before {
 }
 
 
+.events {
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+
+
+
+.events::after {
+    background-image: linear-gradient(135deg, #fff 25%, transparent 25%), 
+                      linear-gradient(225deg, #fff 25%, transparent 25%);
+                      
+}
 
 
 
 
 
 
+
+
+
+
+.price {
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ececec;
+}
+
+
+
+
+.price::after {
+    background-image: linear-gradient(135deg, #ececec 25%, transparent 25%), 
+                      linear-gradient(225deg, #ececec 25%, transparent 25%);
+                      
+}
+
+
+
+
+.video {
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+
+
+
+.video::after {
+    background-image: linear-gradient(135deg, #fff 25%, transparent 25%), 
+                      linear-gradient(225deg, #fff 25%, transparent 25%);
+                      
+}
 
 
 
