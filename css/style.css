@@ -1357,15 +1357,14 @@ h2.head:hover::before {
 .events .text-section {
     flex-basis: 50%;
     margin-bottom: 20px;
-    padding: 20px;
 }
 
 .events .timer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
     margin-bottom: 30px;
+    gap: 5px;
 }
 
 .events .hide {
@@ -1407,6 +1406,7 @@ h2.head:hover::before {
 
 .events .event-content .text {
     text-align: center;
+    padding: 15px;
 }
 
 .events .event-content .text h3 {
