@@ -1977,7 +1977,7 @@ h2.head:hover::before {
 
 
 .discount .content {
-    padding: 0 20px;
+    padding: 50px 20px;
     text-align: center;
     position: relative;
 }
@@ -1988,9 +1988,16 @@ h2.head:hover::before {
     margin-bottom: 70px;
 }
 
+
 .discount .content p {
     font-size: 18px;
     max-width: 500px;
+}
+
+@media (max-width: 768px) {
+    .discount .content  h2 {
+        font-size: 30px;
+    }
 }
 
 .discount .content img {
