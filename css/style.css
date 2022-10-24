@@ -1996,7 +1996,7 @@ h2.head:hover::before {
 
 @media (max-width: 768px) {
     .discount .content  h2 {
-        font-size: 30px;
+        font-size: 36px;
     }
 }
 
