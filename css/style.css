@@ -2013,6 +2013,13 @@ h2.head:hover::before {
 }
 
 
+@media(max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+
 .footer > p {
     text-align: center;
     padding: 20px;
@@ -2023,7 +2030,7 @@ h2.head:hover::before {
     font-family: 'Akronim', cursive;
     font-weight: bold;
     color: var(--main-color);
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .footer .n3mat span {
@@ -2039,7 +2046,7 @@ h2.head:hover::before {
 }
 
 .footer .footer-content h1 {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     letter-spacing: 5px;
 }
@@ -2053,10 +2060,18 @@ h2.head:hover::before {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+@media(max-width: 767px) {
+    .footer .footer-content .social {
+        justify-content: center;
+    }
+}
+
 
 .footer .footer-content .social a {
     color: #aaa;
@@ -2114,11 +2129,19 @@ h2.head:hover::before {
     transform: translateX(12px);
 }
 
+
 .footer .address li {
     margin-bottom: 25px;
     color: #aaa;
     padding-left: 35px;
     position: relative;
+}
+
+@media  (max-width: 767px) {
+    .footer .address li {
+        margin-bottom: 35px;
+        margin-top: 65px;
+    }
 }
 
 .footer .address li::before {
@@ -2132,6 +2155,14 @@ h2.head:hover::before {
     color: var(--main-color);
 }
 
+@media  (max-width: 767px) {
+    .footer .address li::before {
+        left: 50%;
+        top: -20px;
+        transform: translateY(-50%);
+    }
+}
+
 .footer .address li:nth-child(1)::before {content: '\f3c5';}
 .footer .address li:nth-child(2)::before {content: '\f017';}
 .footer .address li:nth-child(3)::before {content: '\f2a0';}
@@ -2139,10 +2170,7 @@ h2.head:hover::before {
 
 
 .footer .footer-content .image img {
-    width: 75px;
+    width: 80px;
 }
-
-
-
 
 
